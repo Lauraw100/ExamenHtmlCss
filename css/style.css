@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e8d9d6;
+  color: #251807;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+.grid_container_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info_item_top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px 25px 25px 25px;
+  position: relative;
+  gap: 10px;
+}
+
+.principal img:hover {
+  width: 40%;
+  transition-delay: 0s;
+  transition-property: all;
+  transition-duration: 6s;
+  transition-timing-function: easy;
+}
+
+.info_item_top img:nth-child(1) {
+  position: absolute;
+  left: 25%;
+  width: 13%;
+  top: 9%;
+}
+
+.info_item_top h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: #251807;
+  color: white;
+  border-radius: 25px;
+  transition: 1.5s;
+  transition-property: scale box-shadow;
+}
+
+.btn:hover {
+  box-shadow: 8px 8px 10px #533b1b;
+  scale: 1.05;
+  background-color: #8e6735;
+  transition-property: scale box-shadow;
+  transition: 0.2s;
+}
+.img_item_top {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img_item_top img:nth-child(1) {
+  width: 80%;
+  z-index: 1;
+  position: absolute;
+  transition: all 3s ease-in-out;
+}
+
+.img-item-top img:nth-child(1):hover {
+  scale: 1.2;
+  transform: translateX(-50px);
+}
+
+.img_item_top img:nth-child(2) {
+  width: 40%;
+  position: absolute;
+  z-index: 2;
+
+  transition: all 3s ease-in-out;
+}
+
+.lst_item h4 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.lst_item img {
+  width: 80%;
+}
+
+.lst_item p {
+  width: 90%;
+}
+
+.img_item_top img:nth-child(3) {
+  width: 100%;
+}
+
+.lista_item_bot {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px 0px;
+}
+
+.lst_item {
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 100px;
+  display: flex;
+}
+
+@keyframes entrada {
+  0% {
+    opacity: 0;
+    left: 0;
+    top: 5;
+  }
+  40% {
+    left: 38%;
+    top: 0;
+  }
+  50% {
+    left: 38%;
+    top: 0;
+  }
+  60% {
+    left: 0%;
+    top: 0;
+  }
+  100% {
+    left: 0%;
+    top: 0;
+  }
+}
+#pepitas {
+  width: 20%;
+  height: auto;
+  position: relative;
+
+  animation-delay: 0s;
+  animation-name: entrada;
+  animation-duration: 6s;
+  animation-timing-function: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: normal;
+  animation-iteration-count: infinite;
+}
+.principal:hover {
+  scale: 1.3;
+  transition-property: all;
+  transition-delay: 0;
+  transition-duration: 3s;
+}
+
+@media (min-width: 700px) {
+  .info_item_top {
+    width: 90%;
+  }
+
+  .info_item_top img:nth-child(1) {
+    top: 4%;
+    left: 30%;
+    width: 10%;
+  }
+
+  .info_item_top h1 {
+    font-size: 4rem;
+  }
+
+  .info_item_top p {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 20px 35px;
+    border-radius: 35px;
+    font-size: 1.2rem;
+  }
+
+  .lista_item_bot {
+    padding: 50px 0px;
+  }
+
+  .lst_item {
+    transition-duration: 1s;
+    transition-property: scale;
+    background-color: #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .lst_item img {
+    width: 30%;
+  }
+
+  .lst_item h4 {
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  .lst_item p {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid_container_item {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .info_item_top {
+    margin-top: 3px;
+    align-items: start;
+    text-align: start;
+    width: 60%;
+    margin-left: 10%;
+    padding: 20px 25px 25px 25px;
+  }
+
+  .img_item_top img:hover {
+    width: 30%;
+    transition-property: all;
+    box-shadow: #8e6735;
+    transition-duration: 7s;
+    transition-delay: 0s;
+  }
+  .info_item_top h1 {
+    font-weight: bold;
+    font-size: 4.5rem;
+  }
+
+  .info_item_top p {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .img_item_top img:nth-child(1) {
+    width: 70%;
+  }
+
+  .img_item_top img:nth-child(2) {
+    width: 40%;
+    animation: img 1.5s infinite 3s;
+  }
+
+  .img_item_top img:nth-child(3) {
+    width: 70vh;
+  }
+
+  .lista_item_bot {
+    flex-direction: row;
+    padding: 15px 0px;
+  }
+  .lst_item p {
+    font-size: 1rem;
+  }
+
+  .lst_item img {
+    width: 70%;
+  }
+}
+
+@keyframes entrada {
+  0% {
+    opacity: 0;
+    left: 0;
+    top: 5;
+  }
+  40% {
+    left: 38%;
+    top: 0;
+  }
+  50% {
+    left: 38%;
+    top: 0;
+  }
+  60% {
+    left: 0%;
+    top: 0;
+  }
+  100% {
+    left: 0%;
+    top: 0;
+  }
+}
+#pepitas {
+  width: 20%;
+  height: auto;
+  position: relative;
+
+  animation-delay: 0s;
+  animation-name: entrada;
+  animation-duration: 6s;
+  animation-timing-function: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: normal;
+  animation-fill-mode: both;
+}
