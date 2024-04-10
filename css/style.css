@@ -127,6 +127,7 @@ body {
   align-items: center;
   justify-content: space-around;
   gap: 20px;
+  height: 200px;
   background-color: #fff;
   border-radius: 100px;
   display: flex;
